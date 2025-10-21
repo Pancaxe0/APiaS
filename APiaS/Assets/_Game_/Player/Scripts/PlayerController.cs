@@ -30,13 +30,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(moveVector * speed * Time.deltaTime);
     
         //sprint
-        // if (Input.GetKeyDown(KeyCode.LeftShift)){
-        //     speed = 10;
-        // }
-        // if (Input.GetKeyUp(KeyCode.LeftShift))
-        // {
-        //     speed = 5;
-        // }
+        if (Input.GetKeyDown(KeyCode.LeftShift)){
+            speed = 10;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 5;
+        }
     }
 }
 

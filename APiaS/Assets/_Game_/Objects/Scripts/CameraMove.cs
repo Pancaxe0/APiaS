@@ -3,18 +3,17 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public GameObject CamLocate;
-    private Camera cam;
+    private Vector3 camPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void OnTriggerEnter(Collider oth)
     {
-        Vector2 camPos = CamLocate.transform.position;
-        cam.transform.position = camPos;
+        Debug.Log("Trigger entered by: " + oth.name);
+        Camera.main.transform.position = camPos;
     }
     void Start()
     {
-        GameObject cam = GameObject.Find("MainCamera");
-        
+        camPos = CamLocate.transform.position;
     }
 
     // Update is called once per frame

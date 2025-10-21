@@ -91,3 +91,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569dc95830ed43c429af4d1a9556919f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMove
+  CamLocate: {fileID: 0}
